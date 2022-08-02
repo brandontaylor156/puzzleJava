@@ -1,5 +1,4 @@
 import java.util.Random;
-import java.lang.*;
 import java.util.ArrayList;
 
 public class PuzzleJava{
