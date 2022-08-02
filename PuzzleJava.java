@@ -2,6 +2,8 @@ import java.util.Random;
 import java.util.ArrayList;
 
 public class PuzzleJava{
+    final char [] letters = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+    final char [] numbers = {'0','1','2','3','4','5','6','7','8','9'};
 
     Random randMachine = new Random();
     
@@ -13,13 +15,10 @@ public class PuzzleJava{
     }
 
     public char getRandomLetter(){
-        char [] letters = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
         return letters[randMachine.nextInt(26)];
     }
 
     public String generatePassword(){
-        char [] letters = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
-        char [] numbers = {'0','1','2','3','4','5','6','7','8','9'};
         String newPassword = "";
         for (int i = 0; i < 8; i++){
             char passwordChar = ' ';
